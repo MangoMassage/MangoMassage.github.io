@@ -183,6 +183,12 @@ img {
     white-space: nowrap;
 }
 
+@media screen and (max-width: 60em) {
+  .heading {
+    font-size: 7vw;
+  }
+}
+
 .logo {
     height: 4em;
 }
