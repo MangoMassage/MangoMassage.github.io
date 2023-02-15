@@ -8,23 +8,6 @@ body {
     background-position: center; 
 }
 
-.heading-1 {
-    font-size 10em;
-}
-
-.frame {
-    height: 100%;      /* equals max image height */
-    width: 100%;
-    white-space: nowrap;
-    text-align: center; margin: 1em 0;
-}
-
-.helper {
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-}
-
 .banner {
     position: fixed;
     top: 0;
@@ -53,11 +36,56 @@ body {
     z-index: 1;
 }
 
+@media screen and (max-width: 45em) {
+  .banner {
+    height: 4em;
+  }
+}
+
+.mangologo {
+    height: 7em;
+}
+
+.heading {
+    font-family: 'Gabriela', serif;
+    font-size: 4.5em;
+    color: #333333;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 45em) {
+  .heading {
+    font-size: 7.5vw;
+  }
+}
+
+.logo {
+    height: 4em;
+}
+
+@media screen and (max-width: 85em) {
+  .logo {
+    display: none;
+  }
+}
+
+.contact {
+    font-size: 2.5em;
+    text-align: right;
+    line-height: 1.1; 
+    font-family: 'Nunito', sans-serif;
+}
+
+@media screen and (max-width: 85em) {
+  .contact {
+    display: none;
+  }
+}
+
 .icon {
     display: none;
-    font-size: 3.5em;
-    padding-right: 0.3em;
-    padding-left: 0.3em;
+    font-size: 2.8em;
+    margin-right: 0.5em;
 }
 
 @media screen and (max-width: 85em){
@@ -86,12 +114,20 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.30);
 }
 
+@media screen and (max-width: 45em) {
+  #hamLinks {
+    top: 4em;
+  }
+}
+
 .hamLink {
     height: 6rem;
     padding: 0.2em;
     padding-left: 1em;
     font-size: 2.5em;
 }
+
+.hamLink a:hover { background: rgb(238, 230, 255);}
 
 .filldiv {
     display: block;
@@ -101,10 +137,10 @@ body {
 
 .blurb {
     position: fixed;
-    top: 37%;
+    top: 34vh;
     width: 36em;
     max-width: 100%;
-
+    padding: 1em;
 }
 
 @media screen and (min-width: 36em) {
@@ -127,20 +163,30 @@ body {
     color: #333333;
 }
 
+@media screen and (max-width: 36em) {
+  #blurbHead {
+    font-size: 2em;
+  }
+}
+
 .blurbBody {
     font-size: 1.75rem;
     /*background: #ffffff*/;
     #background-color: rgba(255, 255, 255, .45);
     #backdrop-filter: blur(2px);
-    
     background: rgba(255, 255, 255, 0.35);
     #border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(2px);
     border: 1px solid rgba(255, 255, 255, 0.30);
-
     padding: 0.3em;
+}
+
+@media screen and (max-width: 36em) {
+  .blurbBody {
+    font-size: 0.8em;
+  }
 }
 
 .details {
@@ -160,55 +206,12 @@ body {
     overflow: hidden;
 }
 
-.contact {
-    font-size: 2.5em;
-    text-align: right;
-    line-height: 1.1; 
-    font-family: 'Nunito', sans-serif;
-}
-
-img {
-    vertical-align: middle;
-    max-height: 100%;
-    max-width: 100%;
-}
-
-.mangologo {
-    height: 7em;
-}
-
-.heading {
-    font-family: 'Gabriela', serif;
-    font-size: 4.5em;
-    color: #333333;
-    white-space: nowrap;
-}
-
-@media screen and (max-width: 60em) {
-  .heading {
-    font-size: 7vw;
-  }
-}
-
-.logo {
-    height: 4em;
-}
-
-@media screen and (max-width: 85em) {
-  .logo {
-    display: none;
-  }
-  .contact {
-    display: none;
-  }
-}
-
-.fb-page {
-    height 30em;
-}
-
 .services {
     #width 100%;
+}
+
+.heading-1 {
+    font-size 10em;
 }
 
 .service {
@@ -229,7 +232,28 @@ img {
     padding-left: 1em;
 }
 
-.hamLink a:hover { background: rgb(238, 230, 255);}
+.fb-page {
+    height 30em;
+}
+
+.frame {
+    height: 100%;      /* equals max image height */
+    width: 100%;
+    white-space: nowrap;
+    text-align: center; margin: 1em 0;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+img {
+    vertical-align: middle;
+    max-height: 100%;
+    max-width: 100%;
+}
 
 a:link { text-decoration: none; color: #333333;}
 
