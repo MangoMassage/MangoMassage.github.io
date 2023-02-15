@@ -129,6 +129,8 @@ body {
 
 .hamLink a:hover { background: rgb(238, 230, 255);}
 
+.hamLink a:active { background: rgb(238, 230, 255);}
+
 .filldiv {
     display: block;
     height: 100%;
@@ -164,7 +166,7 @@ body {
 }
 
 @media screen and (max-width: 36em) {
-  #blurbHead {
+  .blurbHead {
     font-size: 2em;
   }
 }
@@ -206,6 +208,13 @@ body {
     overflow: hidden;
 }
 
+@media screen and (max-width: 36em) {
+  .details {
+    #padding-left: 0.3em;
+    #padding-right: 0.3em;
+  }
+}
+
 .services {
     #width 100%;
 }
@@ -223,6 +232,27 @@ body {
     max-width: 55em;
 }
 
+@media screen and (max-width: 36em) {
+  .service {
+    #padding: 0.3em;
+    margin: 0.5em 0em 0.5em 0em;
+  }
+}
+
+.vprice {
+    display: none;
+}
+
+@media screen and (max-width: 36em) {
+  .vprice {
+    display: inline-block;
+  }
+}
+
+.subheading-1 {
+    font-size: 1em;
+}
+
 .servicebody {
     font-size: 0.8em;
 }
@@ -230,6 +260,12 @@ body {
 .price {
     min-width: 13em;
     padding-left: 1em;
+}
+
+@media screen and (max-width: 36em) {
+  .price {
+    display: none;
+  }
 }
 
 .fb-page {
